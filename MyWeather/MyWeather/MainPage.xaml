@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWeather.MainPage">
+
+    <StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     BackgroundColor="LightGray"
+                     Padding="5">
+            <Label Text="Météo des villes"
+                   HorizontalOptions="Center"/>
+
+        </StackLayout>
+        <Entry Placeholder="Saisir un code postal" x:Name="cp" Keyboard="Numeric" Completed="Button_Clicked"/>
+
+        <Label Text="" x:Name="ville" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+        <Frame x:Name="result" Margin="10" Padding="15" BorderColor="Gray" BackgroundColor="#dffcbb" IsVisible="False">
+            
+       
+ 
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="" FontSize="Large" x:Name="temp" VerticalTextAlignment="Center"/>
+                <Image Source="" x:Name="img" HeightRequest="50" WidthRequest="50" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="vent: "/>
+                <Label Text="" x:Name="vent"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="humidité : "/>
+                <Label Text="" x:Name="hum"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"> 
+                <Label Text="visibilité : "/> 
+                <Label Text="" x:Name="visibility"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="lever soleil : " />
+                <Label Text="" x:Name="lever"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="coucher soleil : "/>
+                <Label Text="" x:Name="coucher"/>
+            </StackLayout>
+        </StackLayout>
+        </Frame>
+
+        <!--<Button Text="Voir la Météo"  Clicked="Button_Clicked"/>-->
+    </StackLayout>
+    
+
+</ContentPage>
