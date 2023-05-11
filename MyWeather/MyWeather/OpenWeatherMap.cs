@@ -13,7 +13,8 @@ using Newtonsoft.Json.Converters;
 namespace MyWeather
 {
 
-
+    // On va créer un objet C# qaui va etre une recopie de l'objet JSon qu'on va récupérer par le client lors de la requette; donc on pourra interroger directements le propriétes qui composent le fichier JSon
+    // on utilise ce site pour transformer un objet Json en sa classe en C# "https://app.quicktype.io"
     public partial class OpenWeatherMap
     {
         [JsonProperty("coord")]
